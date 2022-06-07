@@ -1,11 +1,35 @@
-import React, { FC, useEffect } from 'react'
-import { SwapiClient } from '../../swapiClient';
+import React, { FC } from 'react'
 
-export const Starship: FC<{}> = () => {
+interface StarshipProps {
+  name: string,
+  model: string,
+  manufacturer: string,
+  cost: string;
+  length: string;
+  maxSpeed: string;
+  cargoCapacity: string;
+}
+
+const Starship: FC<StarshipProps> = (props) => {
+  const {
+    name,
+    model,
+    manufacturer,
+    cost,
+    length,
+    maxSpeed,
+    cargoCapacity,
+  } = props;
 
   return (
     <div>
-      Starship - id 
+      name: {name},
+      model: {model},
+      manufacturer: {manufacturer},
+      cost: {cost},
+      length: {length},
+      maxSpeed: {maxSpeed},
+      cargoCapacity: {cargoCapacity},
     </div>
   )
 };
