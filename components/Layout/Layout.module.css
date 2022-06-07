@@ -1,0 +1,41 @@
+.layout {
+  position: fixed;
+  top: 0;
+  height: 55px;
+  width: 100%;
+}
+
+.layout__inner {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.layout__navigation,
+.layout__content {
+  max-width: 1440px;
+  margin: 0 auto;
+  width: calc(100% - 64px);
+}
+
+.layout__content {
+  padding-top: 87px
+}
+
+.layout__navigationList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  gap: 16px;
+}
+
+.layout__navigationListItem a {
+  padding: 16px;
+  display: block;
+  font-size: 18px;
+}
+
+.layout__navigationListItem a:hover {
+  text-decoration: underline
+}
