@@ -33,3 +33,5 @@ const Starship: FC<StarshipProps> = (props) => {
     </div>
   )
 };
+
+export default Starship;

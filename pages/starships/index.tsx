@@ -1,6 +1,8 @@
 import React, { FC } from 'react'
-
 import styles from '../../styles/Starship.module.css'
+
+import { StarshipCard } from '../../components/StarshipCard/StarshipCard';
+
 
 interface StarshipsProps {
   starships: {
@@ -19,3 +21,5 @@ const Starships: FC<StarshipsProps> = (props) => {
     </div>
   )
 };
+
+export default Starships;
